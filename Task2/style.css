@@ -1,62 +1,86 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#667eea,#764ba2);
-    color: white;
-    text-align: center;
+    background: #f4f7fa;
 }
 
-header {
-    padding: 20px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    color: white;
+    padding: 15px 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
 }
 
 .card {
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-    transform: scale(1.03);
+form input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button {
     padding: 10px 15px;
-    margin-top: 10px;
     border: none;
+    background: #3498db;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
-    background: #ffcc00;
-    font-weight: bold;
 }
 
 button:hover {
-    background: #ffaa00;
+    background: #2980b9;
 }
 
-.carousel img {
-    width: 100%;
-    border-radius: 10px;
+.todo-input {
+    display: flex;
+    gap: 10px;
 }
 
-#options button {
-    display: block;
-    width: 100%;
-    margin: 5px 0;
+#taskList li {
+    margin-top: 10px;
+    padding: 8px;
+    background: #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
 }
 
-/* Responsive */
-@media(max-width: 900px){
+.delete-btn {
+    background: red;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
     }
