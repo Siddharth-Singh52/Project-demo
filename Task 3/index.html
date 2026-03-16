@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 3 - Advanced Styling & JS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Advanced Styling & JavaScript</h1>
+</header>
+
+<div class="container">
+
+    <!-- Quiz Section -->
+    <section class="card">
+        <h2>Interactive Quiz</h2>
+        <p id="question"></p>
+        <div id="options"></div>
+        <button onclick="nextQuestion()">Next</button>
+        <p id="score"></p>
+    </section>
+
+    <!-- Image Carousel -->
+    <section class="card">
+        <h2>Image Carousel</h2>
+        <div class="carousel">
+            <img id="carouselImage" src="https://picsum.photos/600/300?1">
+        </div>
+        <div class="carousel-buttons">
+            <button onclick="prevImage()">Prev</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+    </section>
+
+    <!-- API Section -->
+    <section class="card">
+        <h2>Random Joke (API Fetch)</h2>
+        <p id="joke">Click button to load joke</p>
+        <button onclick="getJoke()">Get Joke</button>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
