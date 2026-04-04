@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEasy | ApexPlanet Task 5</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">🛒 ShopEasy</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Best Deals, <span>Every Day</span></h1>
+    <p>Shop the latest electronics, clothing & books at great prices.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="filters">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="electronics">Electronics</button>
+      <button class="filter-btn" data-cat="clothing">Clothing</button>
+      <button class="filter-btn" data-cat="books">Books</button>
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="name" placeholder="Your Name" />
+      <span class="err" id="nameErr"></span>
+      <input type="email" id="email" placeholder="Your Email" />
+      <span class="err" id="emailErr"></span>
+      <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+      <span class="err" id="msgErr"></span>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="successMsg" class="success"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopEasy — ApexPlanet Internship Task 5</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
